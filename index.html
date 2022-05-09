@@ -49,7 +49,14 @@
             rudderanalytics.ready(() => {
               console.log("rudderanalytics: ready");
             });
-        </script>
+            
+            rudderanalytics.page(
+                "home",
+                "homepage"
+            )
+            
+            rudderanalytics.track()
+        </script>        
 
         <div class="culmn">
             <header id="main_menu" class="header navbar-fixed-top">            
