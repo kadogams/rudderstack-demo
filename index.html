@@ -43,7 +43,20 @@
         <![endif]-->
         <div class='preloader'>
             <div class='loaded'>&nbsp;</div>
-        </div>    
+        </div>
+        
+        <script>
+            rudderanalytics.ready(() => {
+              console.log("rudderanalytics: ready");
+            });
+            
+            rudderanalytics.page(
+                "home",
+                "homepage"
+            );
+            
+            rudderanalytics.track();
+        </script>
 
         <div class="culmn">
             <header id="main_menu" class="header navbar-fixed-top">            
